@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #c2d3e1;
+    font-family: open sans;
+}
+
+.wrapper {
+    width: 400px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;    
+}
+
+header {
+    
+    background-color: #6a96d8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    position: relative;
+}
+
+.header-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 7.5px;
+    background-color: white;
+    margin-right: 15px;
+}
+
+.header-title {
+    text-transform: uppercase;
+    color: white;
+    font-size: 17px;
+}
+
+header img {
+    position: absolute;
+    right: 20px;
+    top: 35px;
+    font-weight: 800;
+}
+
+.content {
+    margin: 0;
+    height: 380px;
+    margin: 20px;
+    border-bottom: 1px solid #ddd;
+    /* border-bottom: 1px solid red; */
+
+}
+
+/* .content::after {
+    width: 360px;
+    height: 1px;
+    content: "";
+    display: flex;
+    justify-content: center;
+    background-color: #ddd;
+} */
+
+.content-day {
+    display: flex;
+    align-items: center;
+}
+
+.content-day::before {
+    width: 150px;
+    height: 1px;
+    content: "";
+    margin-left: 5px;
+    background-color: #dddddd;
+}
+
+.content-day::after {
+    width: 150px;
+    height: 1px;
+    content: "";
+    margin-right: 5px;
+    background-color: #dddddd;
+}
+
+.content-day-title {
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #dddddd;
+}
+
+.content-messages-time {
+    color: #b4b4b4;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.content-messages {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 20px;
+} 
+
+.content-messages .content-messages-text {
+    padding: 10px;
+    font-size: 13px;
+}
+
+.first-message {
+    position: relative;
+}
+
+.first-message .content-messages-text::before {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    left: -5px; top: 25px; /* Положение треугольника */
+    border: 5px solid transparent; border-top: 5px solid #e6edf6; border-right: 10px solid #e6edf6;
+   }
+
+.first-message .content-messages-time {
+    margin-left: 5px;
+}
+
+.first-message  .content-messages-text {
+    background-color: #e6edf6;
+    width: 300px;
+}
+
+.second-message .content-messages-time {
+    width: 300px;
+    display: flex;
+    justify-content: end;
+}
+
+.second-message {
+    margin-bottom: 20px;
+    position: relative;
+    right: -60px;
+}
+
+.second-message .content-messages-text::after {
+    
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    right: 55px; top: 25px; /* Положение треугольника */
+    border: 5px solid transparent; border-left: 5px solid #f2f2f2; border-top: 10px solid #f2f2f2;
+}
+
+.second-message .content-messages-text {
+    width: 300px;
+    background-color: #f2f2f2;
+}
+
+.third-message {
+    position: relative;
+}
+
+.third-message .content-messages-text::before {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    left: -5px; top: 25px; /* Положение треугольника */
+    border: 5px solid transparent; border-top: 5px solid #e6edf6; border-right: 10px solid #e6edf6;
+}
+
+.third-message .content-messages-text{
+    float: left;
+    background-color: #e6edf6;
+}
+
+.third-message .content-message-text {
+    background-color: #e6edf6;
+    width: 80px;
+    
+}
+
+.fourth-message .content-messages-text {
+    background-color: #ffc2c1;
+}
+
+.fourth-message {
+    float: right;
+    margin-bottom: 20px;
+}
+
+.send-message-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.send-messages-section-input {
+    border: none;
+    outline: none;
+}
+
+.send-messages-section-input:active {
+    border: none;
+}
+
+.send-messages-section-button {
+    border: none;
+    background-color: white;
+    color: #6999dc;
+    text-transform: uppercase;
+    font-weight: bold;
+}
